@@ -18,6 +18,9 @@ public class LimitedStack<T> extends Stack<T> {
         if (!this.isFull()) {
             super.push(element);
         }
+        else {
+            throw new StackOverFullException();
+        }
     }
 
 }
