@@ -21,6 +21,9 @@ public class Stack<T> {
         if (this.elements.size() > 0) {
             element =  this.elements.remove(this.elements.size()-1);
         }
+        else {
+            throw new StackEmptyException();
+        }
         return element;
     }
 
