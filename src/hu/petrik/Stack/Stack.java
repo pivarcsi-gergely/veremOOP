@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Stack<T> {
 
-     private List<T> elements;
+     protected List<T> elements;
 
     public Stack() {
         this.elements = new ArrayList<>();
-        this.elements.clear();
+        this.empty();
     }
 
     public void push(T element) {
