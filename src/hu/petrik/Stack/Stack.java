@@ -19,7 +19,7 @@ public class Stack<T> {
     public T pop() {
         T element = null;
         if (this.elements.size() > 0) {
-            element =  this.elements.remove(this.elements.size()-1);
+            element = this.elements.remove(this.elements.size()-1);
         }
         else {
             throw new StackEmptyException();
